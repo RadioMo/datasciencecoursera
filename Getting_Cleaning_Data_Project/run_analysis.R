@@ -18,9 +18,9 @@ subjectTest <- read.table("UCI HAR Dataset/Test/subject_test.txt")
 actTest <- read.table("UCI HAR Dataset/Test/Y_test.txt")
 dataTest <- read.table("UCI HAR Dataset/Test/X_test.txt") 
 
-# merge test and training datasets into combined datasets; add activity and subject
+# merge test and training datasets into combined datasets
 allData <- rbind(dataTest,dataTrain)
-allActa <- rbind(actTest,actTrain)
+allAct <- rbind(actTest,actTrain)
 allSubject <- rbind(subjectTest,subjectTrain)
 
 # # # Completion of Step 1 # # #
