@@ -9,14 +9,14 @@
 library(reshape2)
 
 # Read in training files 
-subjectTrain <- read.table("UCI_HAR_Dataset/train/subject_train.txt")
-actTrain <- read.table("UCI_HAR_Dataset/train/Y_train.txt")
-dataTrain <- read.table("UCI_HAR_Dataset/train/X_train.txt") 
+subjectTrain <- read.table("UCI HAR Dataset/train/subject_train.txt")
+actTrain <- read.table("UCI HAR Dataset/train/Y_train.txt")
+dataTrain <- read.table("UCI HAR Dataset/train/X_train.txt") 
 
 # Read in test files 
-subjectTest <- read.table("UCI_HAR_Dataset/Test/subject_test.txt")
-actTest <- read.table("UCI_HAR_Dataset/Test/Y_test.txt")
-dataTest <- read.table("UCI_HAR_Dataset/Test/X_test.txt") 
+subjectTest <- read.table("UCI HAR Dataset/Test/subject_test.txt")
+actTest <- read.table("UCI HAR Dataset/Test/Y_test.txt")
+dataTest <- read.table("UCI HAR Dataset/Test/X_test.txt") 
 
 # merge test and training datasets into combined datasets; add activity and subject
 allData <- rbind(dataTest,dataTrain)
@@ -28,8 +28,8 @@ allSubject <- rbind(subjectTest,subjectTrain)
 # # # PREPARE LIST OF MEASUREMENTS WITH MEAN OR STD # # #
 
 # Read in lists of activities and measurements
-activityLabel  <- read.table("UCI_HAR_Dataset/activity_labels.txt")
-measureLabel <- read.table("UCI_HAR_Dataset/features.txt")
+activityLabel  <- read.table("UCI HAR Dataset/activity_labels.txt")
+measureLabel <- read.table("UCI HAR Dataset/features.txt")
 
 # Convert labels to character strings for later use 
 activityLabel[,2] <- as.character(activityLabel[,2])
