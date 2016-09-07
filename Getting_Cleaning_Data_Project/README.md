@@ -6,4 +6,5 @@ The instructions for this assignment are in the CodeBook.md file.
 The script should run properly if the source data have been downloaded and unzipped into the working directory.
 The output file will be written to the working directory. 
 
+In R Studio, the **reshape2** package should be installed prior to running this script.
 
