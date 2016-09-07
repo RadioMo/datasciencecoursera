@@ -57,6 +57,8 @@ The Submission instructions state "The code should have a file run_analysis.R in
 
 <h2> Script Methodology </h2>
 
+In R Studio, the reshape2 package should be installed prior to running this script. 
+
 The run_analysis.R script follows the following steps:
 
 * Read in lists of activities and measurements (using read.table)
